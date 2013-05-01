@@ -1,5 +1,5 @@
 {
-   "abstract" : "A Perl module for protein contact interfaces evolutive analisys",
+   "abstract" : "A Perl module for protein contact interfaces evolutive analysis",
    "author" : [
       "Hector Valverde <hvalverde@uma.es>"
    ],
@@ -37,5 +37,5 @@
       }
    },
    "release_status" : "stable",
-   "version" : "1.01"
+   "version" : "1.02"
 }

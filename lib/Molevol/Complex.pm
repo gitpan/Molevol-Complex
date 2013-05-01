@@ -4,7 +4,7 @@ package Molevol::Complex;
 use 5.006;
 use strict;
 no strict "refs";
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 # Own modules
 use Molevol::Contact; 
@@ -126,6 +126,15 @@ sub new{
         
     }
     
+    # Test if DSSP and PAML exists
+    if( -e $self->get_dsspbin ){
+        croak("The DSSP program (".$self->get_dsspbin.") is missing.
+               See documentation to solve this error.");
+    }
+    if($ENV{PAMLDIR} eq ""){
+        croak("PAML software must be correctly installed in your system.
+               See documentation to solve this error.");
+    }
     
     # Called $class because it is a gobal method
     $class->_incr_count;

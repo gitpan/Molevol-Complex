@@ -1,5 +1,5 @@
 ---
-abstract: 'A Perl module for protein contact interfaces evolutive analisys'
+abstract: 'A Perl module for protein contact interfaces evolutive analysis'
 author:
   - 'Hector Valverde <hvalverde@uma.es>'
 build_requires:
@@ -19,4 +19,4 @@ no_index:
     - inc
 requires:
   perl: 5.006
-version: 1.01
+version: 1.02
